@@ -1,0 +1,20 @@
+[project]
+name = "windturbine-reliability-dashboard"
+version = "0.1.0"
+description = "Wind turbine reliability dashboard: SCADA analysis, RCA, and KPIs from EDP Open Data"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "plotly>=5.15",
+    "streamlit>=1.28",
+    "openpyxl>=3.1",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+    "pyarrow>=13.0",
+    "kaggle>=2.2.0",
+]
