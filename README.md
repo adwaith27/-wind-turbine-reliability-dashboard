@@ -53,6 +53,8 @@ The app is designed for EDP Open Data wind turbine SCADA and failure logbook fil
 - SCADA signals: wind speed, active power, gearbox oil temperature, gearbox bearing temperature, generator winding temperature, ambient temperature, and turbine ID
 - Logbook records: timestamp, turbine ID, component, failure mode, work order type, and downtime duration
 
+Real raw and processed data files are not included in this repository. Wind turbine SCADA and maintenance logbook files can be large and may be subject to source-specific licensing or access terms, so `data/raw/` and `data/processed/` are intentionally gitignored.
+
 The dashboard also runs without external files. If no processed parquet files are found in `data/processed/`, it falls back to synthetic demo data for four turbines so the full interface can be reviewed immediately.
 
 ## Methodology
@@ -167,4 +169,3 @@ dataframes 2
 - Plotly
 - PyArrow/parquet-ready data flow
 - Jupyter notebooks for exploration and RCA workflow
-
